@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Helvetica Neve', Helvetica, Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 56px;
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+}
+header .logo svg{
+   fill: #e50914;
+   height: 2.25rem;
+   width: 8.375rem;
+}
+header a.logo svg{
+    display: block;
+}
+
+header div:nth-child(2) {
+    text-align: right;
+}
+header a.login {
+    display: inline-block;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 3px;
+}
+header select {
+    background: transparent;
+    color: #fff;
+    padding: 6px 0 6px 20px;
+    border-radius: 3px;
+}
+header select option {
+    background:black;
+}
+header div.world {
+    display: inline-block;
+    margin-right: 30px;
+}
+header div.world svg {
+    height: 20px;
+    color: #fff;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+/*gradient to remove the black shadow*/
+div.full_area {
+    position: relative;
+}
+div.full_area div.gradient {
+    background-image: linear-gradient(0deg,rgba(0,0,0,.8) 0,transparent 40%,transparent 75%,rgba(0,0,0,.8));
+    position: absolute;
+    inset: 0;
+}
+
+div.full_area div.background img {
+    max-width: 100%;
+    opacity: 0.6;
+}
+
+/*Center Content area*/
+div.full_area div.content {
+    max-width: 655px;
+    position: absolute;
+    inset: 0;
+    left: 50%;
+    margin-left: -327.5px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+div.full_area h1 {
+    font-size: 3.125rem;
+}
+div.full_area h2 {
+    font-size: 1.625rem;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+div.full_area h3 {
+    font-size: 1rem;
+}
+div.full_area form {
+    position: relative;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr max-content;
+}
+div.full_area input {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+div.full_area input ~ span {
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    z-index: 3;
+    color: #aaa;
+    transition: all 0.15s ease;
+    pointer-events: none;
+}
+div.full_area input:focus {
+    padding-top: 14px;
+    padding-bottom: 6px;
+}
+div.full_area input:focus ~ span {
+    top: 2px;
+    font-size: .7rem;
+}
+div.full_area button {
+    font-size: 1.625rem;
+    padding: 8px 26px;
+    background-color: #e50914;
+    color: #fff;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
